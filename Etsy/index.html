@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="container">
+<header id="main-header">
+<div id="leftside">
+     <a href="#"><img src="https://cdn.worldvectorlogo.com/logos/etsy.svg" alt="Etsy logo" id="logo"></a>
+     <form action="get">
+     <input type="search" id="search-bar" placeholder="Search for items or shops">
+     <button type="button" id="magnifying">
+     <i class="fa fa-search"></i>                          
+</button>
+
+<button type="button" id="cross">
+     <i class="fa fa-times"></i>
+</button>                
+
+</form>
+</div>
+
+<div id="rightside">
+     <ul>
+     <li id="sell" class="link">
+     <a href="#">Sell on Etsy</a>
+     </li>
+    
+     <li id="register" class="link">
+     <a href="#">Register</a>
+     </li>
+    
+     <li  class="link">
+     <button type="button" id="sign">Sign in</button>
+     </li>
+    
+     <li id="discover" class="link">
+     <i class="fa fa-briefcase"><a href="#"></a></i>
+     <button id="discover-word" type="button"><a href="#">Discover</a></button>
+     </li>
+    
+     <li id="cart" class="link">
+     <i class="fa fa-shopping-cart"></i>
+     <a href="#">Cart</a>
+     </li>
+    
+ </ul>
+ </div>
+
+ </header>
+
+ <section>
+     <aside>
+     <p>All Categories</p>
+     <ul>
+     <li>Home & Living</li>
+     <li>Art & Collectibles</li>
+     <li>Weddings</li>
+     <li>Clothing</li>
+    
+     <p><i class="fa fa-plus"></i> Show more</p>
+
+     </ul>
+
+     <p>Item type</p>
+     <ul>
+     <li><input type="radio" class="radio-list" name="type" value="all" checked>All items</li>
+     <li><input type="radio" class="radio-list" name="type" value="handmade">Handmade</li>
+     <li><input type="radio" class="radio-list" name="type" value="vintage">vintage</li>
+    
+     </ul>
+
+
+     <p>Color</p>
+     <ul>
+         <li class="checked-list"><input type="checkbox"> Clear</li>
+         <li class="checked-list"><input type="checkbox">Black</li>
+         <li class="checked-list"><input type="checkbox">White</li>
+         <li class="checked-list"><input type="checkbox">Brown</li>
+         <li class="checked-list"><input type="checkbox">Blue</li>
+         <p><i class="fa fa-plus"></i> Show more</p>
+     </ul>
+
+
+
+     <p>Price($)</p>
+     <ul>
+         <li><input type="radio" class="radio-list" name="price" value="anyprice" checked>Any price</li>
+         <li><input type="radio" class="radio-list" name="price" value="under">Under $25</li>
+         <li><input type="radio" class="radio-list" name="price" value="200">$50 to $100</li>
+         <li><input type="radio" class="radio-list" name="price" value="300">$200 to $250</li>
+         <li><input type="radio" class="radio-list" name="price" value="over">Over $100</li>
+         <li><input type="radio" class="radio-list" name="price" value="customprice">Custom <ul>
+         <li><input type="text" class="custom-price" min="1.00" placeholder="Low"> to <input type="text" class="custom-price" placeholder="High"></li>
+         </ul></li>
+     </ul>
+
+     <p>Shipping</p>
+     <ul>
+         <li class="checked-list"><input type="checkbox">Free shipping</li>
+         <li class="checked-list"><input type="checkbox">Ready to ship in 1 business day</li>
+         <li class="checked-list"><input type="checkbox">Ready to ship within 3 business days</li>
+         </ul>
+                                
+     <p>Ready to ship in</p>
+                                
+     <ul>
+         value="anywhere" checked> Anywhere</li>
+         <li><input type="radio" class="radio-list" name="locate" value="us">United States</li>
+         <li><input type="radio" class="radio-list" name="locate" value="custom">Custom <ul>
+         <li><input type="text" class="custom-location" minlength="1" maxlength="15" placeholder="Enter Location"></li>
+         </ul></li>
+     </ul>
+
+     <p>Ordering options</p>
+         <ul>
+         <li class="checked-list"><input type="checkbox">Accepts Etsy gift cards</li>
+         <li class="checked-list"><input type="checkbox">Customizable</li>
+         <li class="checked-list"><input type="checkbox">Can be gift-wrapped</li>
+         </ul>
+
+     <p>Ship to</p>
+         <ul>
+         <li><select name="ship-to" id="ship-to">
+         <option value="united-states">United States</option>
+         <option value="united-states">Spain</option>
+         <option value="united-states">Mexico</option>
+         <option value="united-states">Canada</option>
+         <option value="united-states">Puerto Rico</option>
+         <option value="united-states">Cuba</option>
+         <option value="united-states">Panama</option>
+                             
+         </select></li>
+         </ul>
+
+
+     </aside>
+
+
+         <main id="main">
+         <div class="flex-container" id="images">
+         </div>
+         </main>
+           
+     </section>
+        
+     <footer id="main-footer">
+         <section id="subscribe">
+         <div>
+     <p>Get fresh Etsy trends and unique gift ideas delivered right to your inbox.</p>
+     </div>
+     <input type="email">
+         <button type="submit" data-action="email-list-subscribe" class="btn btn-append btn-primary">Subscribe</button>
+     </div>
+     </section>
+     <div id="footer-mountain">
+                    
+     </div>
+         <div id="footer-mountain-bottom"></div>
+         <section id="more-links">
+         <div>
+         <h2>Shop</h2>
+         <ul>
+         <li>Gift cards</li>
+         <li>Etsy blog</li>
+         </ul>
+         </div>
+     <div>
+     <h2>Sell</h2>
+         <ul>
+         <li>Sell on Etsy</li>
+         <li>Teams</li>
+         <li>Forums</li>
+         <li>Affiliates</li>
+         </ul>
+     </div>
+                      
+     <div>
+     <h2>About</h2>
+         <ul>
+         <li>Etsy, Inc.</li>
+         <li>Policies</li>
+         <li>Investors</li>
+         <li>Careers</li>
+         <li>Press</li>
+         <li>Impact</li>
+         </ul>
+         </div>
+         <div>
+     <h2>Help</h2>
+     <ul>
+     <li>Help Center</li>
+     </ul>
+     </div>
+     </section>
+    
+     <section id="copyright">
+     <div>
+     <p>
+     <span>United States | </span>
+     <span> English (US) | </span>
+     <span> $ (USD)</span>
+     </p>
+     </div>
+     
+     <div>
+     <p>&copy; 2019 Etsy, Inc.</p>
+     <p><a href="#">Terms of Use</a></p>
+     <p><a href="#">Privacy</a></p>
+     <p><a href="#">Interest-based ads</a></p>
+     </div>
+     
+     </section>
+    
+     </footer>
+      </div>
+
+ <script src="items.js"></script>
+ <script src="main.js"></script>
+ </body>
+ </html>
